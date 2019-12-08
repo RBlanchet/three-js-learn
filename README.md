@@ -9,3 +9,4 @@ Je vais séparer les grand points de Three.js en partie, elle seront donc énum�
 
 * [Découverte de Three.js](doc/DECOUVERTE.md)
 * [Rendu geométrique d'une figure](doc/GEOMETRIQUE.md)
+* [Vison en trois dimensions](doc/DIMENSIONS.md)
