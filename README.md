@@ -8,3 +8,4 @@ Elle permet d'utiliser le plein potentiel de la carte graphique dans le Web, ell
 Je vais séparer les grand points de Three.js en partie, elle seront donc énuméré plus bas :
 
 * [Découverte de Three.js](doc/DECOUVERTE.md)
+* [Rendu geométrique d'une figure](doc/GEOMETRIQUE.md)
