@@ -19,25 +19,26 @@ scene.add(Cube);
 // Position de la camera et rendu de la Scene
 camera.position.z = 2;
 
+// Controles
+const controls = new THREE.OrbitControls(camera, renderer.domElement);
+controls.autoRotate = true;
+controls.update();
 
 // Animation de notre Scene
 /**
- * Permet d'effectuer une rotation sur notre Mesh
- *
- * @param {Mesh} element
- */
-function rotateElement(element) {
-  element.rotation.y += 0.01;
-  element.rotation.x += 0.01;
-}
-
-/**
  * S'occupe de mettre à jour notre Canvas en lui indiquant que faire
  */
-function animate(callback) {
+function animate() {
   requestAnimationFrame(animate);
+  controls.update();
   renderer.render(scene, camera);
-  rotateElement(Cube);
 }
 
 animate();
+
+// Lors du resize de notre fenêtre, il faut redimenssioner nos objets
+window.addEventListener( 'resize', function () {
+  camera.aspect = window.innerWidth / window.innerHeight;
+  camera.updateProjectionMatrix();
+  renderer.setSize( window.innerWidth, window.innerHeight );
+});
