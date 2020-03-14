@@ -1,4 +1,4 @@
-# Application Three.js
+# Application Three.js (https://rblanchet.github.io/three-js-learn/)
 
 ## Qu'est-ce que Three.js ?
 Three.js est une librairie Javascript permettant d'utiliser ou de créer des scènes 3D directement dans un navigateur Web.
@@ -11,3 +11,4 @@ Je vais séparer les grand points de Three.js en partie, elle seront donc énum�
 * [Rendu geométrique d'une figure](doc/GEOMETRIQUE.md)
 * [Vison en trois dimensions](doc/DIMENSIONS.md)
 * [Prise en main des controles](doc/CONTROLES.md)
+* [Initiation à la création d'un jeu](doc/game/MAIN.md)
